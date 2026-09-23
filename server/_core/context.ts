@@ -8,5 +8,16 @@ export type TrpcContext = {
 };
 
 export async function createContext(opts: CreateExpressContextOptions): Promise<TrpcContext> {
-  return { req: opts.req, res: opts.res, user: null };
+  const user: User = {
+    id: 1,
+    openId: "local-user",
+    name: "Local workspace",
+    email: null,
+    loginMethod: "local",
+    role: "admin",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    lastSignedIn: new Date(),
+  };
+  return { req: opts.req, res: opts.res, user };
 }

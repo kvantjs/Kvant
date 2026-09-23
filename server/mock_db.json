@@ -1,0 +1,14 @@
+{
+  "users": [],
+  "chats": [
+    {
+      "id": "chat-test",
+      "userId": null,
+      "title": "Conversa de desenvolvimento",
+      "messages": "[{\"role\":\"user\",\"content\":\"Tenho um workspace React\"},{\"role\":\"user\",\"content\":\"Como inicio este projeto?\"},{\"role\":\"assistant\",\"content\":\"Ação executada no workspace: 1 criado. As alterações já estão disponíveis no editor Monaco.\"}]",
+      "createdAt": "2026-09-23T03:09:10.691Z",
+      "updatedAt": "2026-09-23T03:09:10.691Z"
+    }
+  ],
+  "workspaces": []
+}

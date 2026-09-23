@@ -1,0 +1,7 @@
+{
+  "name": "Kvant",
+  "description": "Kvant — workspace de desenvolvimento assistido por IA",
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
