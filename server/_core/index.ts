@@ -34,7 +34,7 @@ async function startServer() {
 
   const preferredPort = Number.parseInt(process.env.PORT || "3000", 10);
   const port = await findAvailablePort(preferredPort);
-  server.listen(port, () => console.log(`Kvant server listening on port ${port}`));
+  server.listen(port, "0.0.0.0", () => console.log(`Kvant server listening on port ${port}`));
 }
 
 startServer().catch(console.error);
