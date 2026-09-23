@@ -1,48 +1,36 @@
-logs
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build and runtime output
+dist/
+build/
+.webdev/
+.manus/
+.manus-logs/
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+*.tsbuildinfo
 
-node_modules
-dist
-dist-ssr
-*.local
-
-.vscode/*
-.vscode/launch.json
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-/.history
-/.cache
-/build
-functions/build/
-.env.local
+# Environment and secrets
 .env
-.dev.vars
-*.vars
-.wrangler
-_worker.bundle
+.env.*
+!.env.example
+*.pem
+*.key
+*secret*
+*token*
 
-Modelfile
-modelfiles
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
 
-# docs ignore
-site
+# Coverage
+coverage/
+.nyc_output/
 
-# commit file ignore
-app/commit.json
-changelogUI.md
-docs/instructions/Roadmap.md
-.cursorrules
-*.md
-.qodo
+# Manus generated metadata
+.project-config.json
+client/public/__manus__/

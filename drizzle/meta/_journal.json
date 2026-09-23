@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1790124167172,
+      "tag": "0000_real_colleen_wing",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1790124261640,
+      "tag": "0001_spooky_microchip",
+      "breakpoints": true
+    }
+  ]
+}
