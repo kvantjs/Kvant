@@ -516,3 +516,167 @@ body, #root { background: var(--ink-void); color: var(--text-primary); }
   .topbar { padding-inline: 10px; }
   .builder-toolbar { height: 32px; }
 }
+
+
+/* Kvant brand system — authoritative tokens from the brand guide. */
+:root {
+  --brand-cta: #325cfe;
+  --brand-bg: #171717;
+  --brand-border: #333333;
+  --brand-text: #ffffff;
+  --brand-muted: #b8b8b8;
+}
+
+html, body, #root,
+body,
+.kvant-shell,
+.kvant-main,
+.kvant-sidebar,
+.topbar,
+.chat-pane,
+.workbench-pane,
+.pane-header,
+.workbench-header,
+.messages-scroll,
+.composer-wrap,
+.code-workspace,
+.editor-tab,
+.editor-status,
+.runtime-preview-shell,
+.runtime-terminal-shell,
+.runtime-toolbar,
+.runtime-terminal-header,
+.runtime-console,
+.file-tree,
+.agent-plan,
+.prompt-grid button,
+.composer,
+.builder-toolbar,
+.connection-pill,
+.branch-pill {
+  background: var(--brand-bg) !important;
+}
+
+body,
+#root,
+.kvant-shell,
+.kvant-main,
+.chat-pane,
+.workbench-pane,
+.messages-scroll,
+.composer-wrap,
+.runtime-preview-shell,
+.runtime-terminal-shell {
+  color: var(--brand-text);
+}
+
+.kvant-sidebar,
+.topbar,
+.chat-pane,
+.pane-header,
+.workbench-header,
+.file-tree,
+.editor-tab,
+.editor-status,
+.runtime-toolbar,
+.runtime-terminal-header,
+.agent-plan,
+.prompt-grid button,
+.composer,
+.builder-toolbar,
+.connection-pill,
+.branch-pill,
+.user-bubble,
+.assistant-avatar,
+.welcome-icon,
+.error-note {
+  border-color: var(--brand-border) !important;
+}
+
+.brand-name,
+.breadcrumbs,
+.pane-header h1,
+.welcome-state h2,
+.assistant-copy,
+.editor-tab,
+.tree-project,
+.file-row-active,
+.builder-toolbar button:hover,
+.builder-toolbar .builder-mode-active,
+.topbar-left .icon-button:hover,
+.topbar-right .icon-button:hover {
+  color: var(--brand-text) !important;
+}
+
+.sidebar-label,
+.eyebrow,
+.breadcrumb-muted,
+.profile-copy small,
+.history-empty,
+.prompt-grid button,
+.composer-tools button,
+.composer-hint,
+.runtime-status,
+.preview-url,
+.builder-address,
+.branch-pill,
+.file-row,
+.tree-header,
+.agent-task,
+.agent-plan-title,
+.connection-pill {
+  color: var(--brand-muted) !important;
+}
+
+button:focus-visible,
+textarea:focus-visible,
+input:focus-visible {
+  outline-color: var(--brand-text) !important;
+}
+
+/* Primary actions only: the single branded accent. */
+.new-project-button,
+.send-button,
+.publish-button,
+.run-button,
+.runtime-run-button {
+  border-color: var(--brand-cta) !important;
+  background: var(--brand-cta) !important;
+  color: var(--brand-text) !important;
+  box-shadow: none !important;
+}
+
+.new-project-button:hover,
+.send-button:hover:not(:disabled),
+.publish-button:hover,
+.run-button:hover,
+.runtime-run-button:hover {
+  background: #2449d7 !important;
+  border-color: #2449d7 !important;
+  color: var(--brand-text) !important;
+}
+
+.send-button:disabled {
+  background: var(--brand-cta) !important;
+  opacity: .38;
+}
+
+.status-dot,
+.kvant-mark-dot,
+.kvant-mark-line,
+.nav-item-active > span:first-child,
+.history-item-active svg,
+.prompt-grid button svg,
+.runtime-terminal-header svg {
+  color: var(--brand-muted);
+  background-color: currentColor;
+  box-shadow: none;
+}
+
+.messages-scroll {
+  background-image: none !important;
+}
+
+.runtime-preview-frame {
+  background: var(--brand-bg) !important;
+}
