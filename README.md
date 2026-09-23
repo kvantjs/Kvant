@@ -1,6 +1,6 @@
 # Kvant
 
-Kvant é um workspace de desenvolvimento assistido por agente, migrado para uma base **React + Vite + TypeScript** com servidor Express/tRPC, persistência Drizzle/MySQL, autenticação Manus OAuth, editor Monaco e runtime de preview Sandpack.
+Kvant é um workspace de desenvolvimento assistido por agente, migrado para uma base **React + Vite + TypeScript** com servidor Express/tRPC, persistência Drizzle/MySQL, autenticação Kvant OAuth, editor Monaco e runtime de preview Sandpack.
 
 ## Stack
 
@@ -10,7 +10,7 @@ Kvant é um workspace de desenvolvimento assistido por agente, migrado para uma 
 - Drizzle ORM + MySQL/TiDB
 - Monaco Editor
 - Sandpack para preview executável
-- Manus OAuth e APIs integradas
+- Kvant OAuth e APIs integradas
 
 ## Desenvolvimento
 
@@ -27,7 +27,7 @@ pnpm test -- --run
 pnpm build
 ```
 
-A aplicação usa as variáveis de ambiente fornecidas pelo runtime Manus. Não versionamos arquivos `.env`, credenciais, tokens, dependências instaladas ou artefatos de build.
+A aplicação usa as variáveis de ambiente fornecidas pelo runtime Kvant. Não versionamos arquivos `.env`, credenciais, tokens, dependências instaladas ou artefatos de build.
 
 ## Estrutura
 

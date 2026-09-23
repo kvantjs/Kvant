@@ -1,7 +1,6 @@
 import { and, desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import { chats, InsertUser, users, workspaces } from "../drizzle/schema";
-import { ENV } from "./_core/env";
 
 type Db = ReturnType<typeof drizzle>;
 let _db: Db | null = null;
@@ -39,9 +38,6 @@ export async function upsertUser(user: InsertUser): Promise<void> {
   if (user.role !== undefined) {
     values.role = user.role;
     updateSet.role = user.role;
-  } else if (user.openId === ENV.ownerOpenId) {
-    values.role = "admin";
-    updateSet.role = "admin";
   }
   values.lastSignedIn ??= new Date();
   updateSet.lastSignedIn ??= new Date();
